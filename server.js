@@ -15,5 +15,3 @@ async function getResponse(IdUser){
 
 let loginU = getResponse(0)
 console.log(loginU)
-
-

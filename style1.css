@@ -353,7 +353,7 @@
 }
 
 
-.lion {
+.lion-authorization {
   background-color: #472B83;
   background: linear-gradient(to top left, #472B83, #1d1236);
   display: flex;
@@ -366,11 +366,26 @@
   left: 0px;
 }
 
-.avtor {
+.avtor-authorization {
   background: linear-gradient(to top left, #640686, #ec96e5);
-  height: 400px;
+  height: 480px;
   width: 500px;
   border-radius: 10px;
+  animation-name: authorization;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+.avtor-registr {
+  background: linear-gradient(to top left, #640686, #ec96e5);
+  height: 550px;
+  width: 500px;
+  border-radius: 10px;
+  animation-name: registration;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
 }
 
 .login {
@@ -382,7 +397,7 @@
   color: #000;
   font-size: 20px;
   border: none;
-  border-bottom: 3px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
   outline: none;
   background-color: transparent;
   transition: 0.3s;
@@ -391,16 +406,24 @@
 
 .textlogin {
   display: flex;
-  margin-top: 60px;
+  margin-top: 40px;
   justify-content: center;
   font-size: 40px;
 }
 
 .textparolya {
   display: flex;
-  margin-top: 30px;
+  margin-top: 25px;
   justify-content: center;
   font-size: 40px;
+}
+
+.textparolya span {
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  font-weight: 900;
+  color: #FFB800;
 }
 
 .parol {
@@ -412,7 +435,7 @@
   color: #000;
   font-size: 20px;
   border: none;
-  border-bottom: 3px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
   outline: none;
   background-color: transparent;
   transition: 0.3s;
@@ -460,4 +483,93 @@
   font-size: 20px;
   margin-top: 10px;
   visibility: hidden;
+}
+
+.registretion {
+  text-decoration: none;
+  background-color: #621f92;
+  width: 120px;
+  height: 25px;
+  font-size: 20px;
+  justify-content: center;
+  display: flex;
+  border-radius: 4px;
+  transition: 0.6s;
+}
+
+.registretion-block {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.registretion:hover {
+  background-color: #6b30e2;
+}
+
+.to-register {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.to-register-btn {
+  text-decoration: none;
+  background-color: #490977;
+  width: 270px;
+  height: 40px;
+  font-size: 30px;
+  justify-content: center;
+  display: flex;
+  border-radius: 4px;
+  transition: 0.6s;
+}
+
+.to-register-btn:hover {
+  background-color: #6231c2;
+  width: 280px;
+  height: 43px;
+}
+
+.lion-registr {
+  background-color: #472B83;
+  background: linear-gradient(to top left, #472B83, #1d1236);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+@keyframes authorization {
+  0% {
+    opacity: 0;
+    position: absolute;
+    top: -700px;
+  }
+  100% {
+    opacity: 1;
+    position: absolute;
+    top: 133px;
+  }
+}
+
+@keyframes registration {
+  0% {
+    opacity: 0;
+    position: absolute;
+    top: -700px;
+  }
+  100% {
+    opacity: 1;
+    position: absolute;
+    top: 98px;
+  }
 }
